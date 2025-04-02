@@ -269,7 +269,6 @@ export default function Home() {
         <meta name="description" content="AIを使って百合漫画のプロットを自動生成" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <div className="app-container">
         <h1 className="app-title">百合漫画ジェネレーター</h1>
 
