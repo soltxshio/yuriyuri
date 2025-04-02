@@ -265,7 +265,7 @@ export default function Home() {
   return (
     <div className="yuri-app">
       <Head>
-        <title>百合漫画ジェネレーター</title>
+        <title>百合漫画ジェネレータ</title>
         <meta name="description" content="AIを使って百合漫画のプロットを自動生成" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
