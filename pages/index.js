@@ -41,8 +41,11 @@ export default function Home() {
   const [shortDescription, setShortDescription] = useState('');
   const [sceneCount, setSceneCount] = useState('3〜5');
   const [feelings, setFeelings] = useState([]);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [colors, setColors] = useState([]);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [compositions, setCompositions] = useState([]);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [otherMood, setOtherMood] = useState();
   const [seasons, setSeasons] = useState([]);
   const [weather, setWeather] = useState([]);
@@ -265,7 +268,6 @@ export default function Home() {
         <title>百合漫画ジェネレーター</title>
         <meta name="description" content="AIを使って百合漫画のプロットを自動生成" />
         <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet" />
       </Head>
 
       <div className="app-container">
