@@ -41,6 +41,9 @@ export default function Home() {
   const [shortDescription, setShortDescription] = useState('');
   const [sceneCount, setSceneCount] = useState('3〜5');
   const [feelings, setFeelings] = useState([]);
+  const [colors, setColors] = useState([]);
+  const [compositions, setCompositions] = useState([]);
+  const [otherMood, setOtherMood] = useState();
   const [seasons, setSeasons] = useState([]);
   const [weather, setWeather] = useState([]);
   const [timeOfDay, setTimeOfDay] = useState([]);
@@ -214,10 +217,7 @@ export default function Home() {
     if (feelings.length > 0) {
       prompt += `感情: ${feelings.join('、')}\n`;
     }
-    
-    if (colors.length > 0) {
-      prompt += `色の基調: ${colors.join('、')}\n`;
-    }
+  
     
     if (compositions.length > 0) {
       prompt += `画の構図: ${compositions.join('、')}\n`;
@@ -234,11 +234,7 @@ export default function Home() {
     if (timeOfDay.length > 0) {
       prompt += `時間帯: ${timeOfDay.join('、')}\n`;
     }
-    
-    if (otherMood.length > 0) {
-      prompt += `その他の設定: ${otherMood.join('、')}\n`;
-    }
-    
+
     // ストーリーパターン
     if (storyPattern) {
       prompt += `\n【ストーリーパターン】\n${storyPattern}\n`;
